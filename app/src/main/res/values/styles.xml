@@ -1,0 +1,492 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <style name="SignInEditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:autoText">false</item>
+        <item name="android:capitalize">none</item>
+        <item name="android:scrollHorizontally">true</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:textColor">@color/table_text</item>
+        <item name="android:textCursorDrawable">@drawable/edit_text_cursor</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:background">@drawable/edit_text_background</item>
+    </style>
+
+    <style name="ShadowText">
+        <item name="android:shadowColor">@color/text_shadow</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">1</item>
+    </style>
+
+    <style name="AvatarLarge">
+        <item name="android:layout_width">32dp</item>
+        <item name="android:layout_height">32dp</item>
+    </style>
+
+    <style name="AvatarMedium">
+        <item name="android:layout_width">24dp</item>
+        <item name="android:layout_height">24dp</item>
+    </style>
+
+    <style name="AvatarSmall">
+        <item name="android:layout_width">16dp</item>
+        <item name="android:layout_height">16dp</item>
+    </style>
+
+    <style name="ListView">
+        <item name="android:dividerHeight">2px</item>
+        <item name="android:divider">@drawable/bootstrap_divider</item>
+        <item name="android:cacheColorHint">@android:color/transparent</item>
+    </style>
+
+    <style name="ListSubtitleText">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/table_text_light</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+
+    <!-- Custom Spinner -->
+    <style name="Spinner">
+        <item name="android:indeterminate">true</item>
+        <item name="android:indeterminateDrawable">@drawable/spinner</item>
+        <item name="android:indeterminateDuration">2000</item>
+        <item name="android:indeterminateOnly">true</item>
+    </style>
+
+    <style name="ListSpinner" parent="Spinner">
+        <item name="android:layout_width">64dp</item>
+        <item name="android:layout_height">64dp</item>
+    </style>
+
+    <style name="ListItem">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:background">@drawable/list_item_background</item>
+    </style>
+
+    <style name="BootstrapButton">
+        <item name="android:background">@drawable/button_background_states</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TimerChronometer">
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">75sp</item>
+        <item name="android:textColor">#464646</item>
+    </style>
+
+    <style name="NavMenuButton">
+        <item name="android:textColor">@color/nav_text_selector</item>
+        <item name="android:background">@drawable/nav_menu_button_background_selector</item>
+    </style>
+
+
+    <!--
+    Base application theme, dependent on API level. This theme is replaced
+    by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+-->
+    <style name="AppBaseTheme" parent="Theme.Carddemo">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+
+
+
+    <!-- Text for sections -->
+    <style name="AppTheme.TitleText">
+        <item name="android:textSize">@dimen/demo_title_section_textsize</item>
+        <item name="android:layout_marginLeft">@dimen/demo_title_section_margin</item>
+        <item name="android:layout_marginRight">@dimen/demo_title_section_margin</item>
+        <item name="android:layout_marginBottom">@dimen/demo_title_section_margin_bottom</item>
+        <item name="android:layout_marginTop">@dimen/demo_title_section_margin_top</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/demo_title_section_textcolor</item>
+    </style>
+
+    <style name="AppTheme.TrademarkText">
+        <item name="android:textSize">12dp</item>
+        <item name="android:layout_marginLeft">@dimen/demo_title_section_margin</item>
+        <item name="android:layout_marginRight">@dimen/demo_title_section_margin</item>
+        <item name="android:layout_marginBottom">@dimen/demo_title_section_margin_bottom</item>
+        <item name="android:textColor">@android:color/darker_gray</item>
+    </style>
+
+    <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++   -->
+
+    <!-- Customize Button Overflow in Header -->
+    <!--
+    <style name="card.header_button_base.overflow" >
+        <item name="android:background">@drawable/ic_action_arrow_bottom</item>
+    </style>
+    -->
+    <style name="list_card.thumbnail"><item name="android:textSize">12dp</item></style>
+    <!-- Other Button in Header -->
+    <style name="card.header_button_base.other">
+        <item name="android:background">@drawable/card_menu_button_other</item>
+    </style>
+
+    <!-- Button Base in Header on the left-->
+    <style name="card.header_button_base.left">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:paddingLeft">@dimen/card_header_button_padding_left</item>
+        <item name="android:focusable">false</item>
+        <item name="android:focusableInTouchMode">false</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <!-- Button Overflow in Header -->
+    <style name="card.header_button_base.left.overflow" >
+        <item name="android:background">@drawable/card_menu_button_overflow</item>
+    </style>
+
+    <!-- Button to Expand/Collapse in Header -->
+    <style name="card.header_button_base.left.expand">
+        <item name="android:background">@drawable/card_menu_button_expand</item>
+    </style>
+
+    <!-- Other Button in Header -->
+    <style name="card.header_button_base.left.other">
+        <item name="android:background">@drawable/card_menu_button_other</item>
+    </style>
+
+    <style name="card.header_simple_title">
+        <item name="android:textSize">@dimen/card_header_simple_title_text_size</item>
+        <item name="android:textColor">@color/card_text_color_header</item>
+        <item name="android:layout_gravity">left|center_vertical</item>
+        <item name="android:layout_marginLeft">@dimen/card_header_simple_title_margin_left</item>
+        <item name="android:layout_marginTop">@dimen/card_header_simple_title_margin_top</item>
+        <item name="android:layout_marginRight">@dimen/card_header_simple_title_margin_right</item>
+        <item name="android:layout_marginBottom">@dimen/card_header_simple_title_margin_bottom</item>
+    </style>
+    <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++   -->
+
+    <!-- Customize Shadow -->
+    <!--Style for shadow image-->
+    <!--
+    <style name="card.shadow_image">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">5dp</item>
+        <item name="android:src">@drawable/democard_my_shadow</item>
+        <item name="android:layout_below">@+id/card_main_content_layout</item>
+    </style>
+    -->
+
+    <style name="card.shadow_my_image">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">10dp</item>
+        <item name="android:src">@drawable/democard_my_shadow</item>
+        <item name="android:layout_below">@+id/card_main_content_layout</item>
+    </style>
+
+
+    <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++   -->
+
+    <!-- Myapps style -->
+
+    <style name="carddemo_myapps_main_inner_ratingbar"  >
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@drawable/ratingbar_small_holo_dark</item>
+        <item name="android:indeterminateDrawable">@drawable/ratingbar_small_holo_dark</item>
+        <item name="android:minHeight">12dip</item>
+        <item name="android:maxHeight">12dip</item>
+        <item name="android:thumb">@null</item>
+        <item name="android:isIndicator">true</item>
+    </style>
+
+    <style name="carddemo_myapps_main_inner_secondarytitle">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@android:color/darker_gray</item>
+    </style>
+
+    <style name="carddemo_myapps_main_inner_title">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:layout_marginTop">2dp</item>
+    </style>
+
+    <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++   -->
+
+
+
+    <style name="carddemo_googlenow_main_inner_lastupdate">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@android:color/darker_gray</item>
+        <item name="android:layout_marginLeft">@dimen/card_header_simple_title_margin_left</item>
+    </style>
+
+    <style name="Birth.card.content_outer_layout" parent="@style/card.content_outer_layout">
+        <!--Style for Content View-->
+        <item name="android:minHeight">60dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginTop">@dimen/card_content_outer_view_margin_top</item>
+        <item name="android:layout_marginBottom">@dimen/card_content_outer_view_margin_bottom</item>
+        <item name="android:layout_marginLeft">@dimen/card_content_outer_view_margin_left</item>
+        <item name="android:layout_marginRight">@dimen/card_content_outer_view_margin_right</item>
+    </style>
+
+
+
+    <style name="Now"></style>
+
+    <style name="Now.card_expand_inner_layout">
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">32dp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="Now.card_expand_inner_layout.light_gray">
+        <item name="android:background">#515254</item>
+        <item name="android:textColor">#B3B2B2</item>
+    </style>
+
+    <style name="Now.card_expand_inner_layout.light_gray.bold">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Now.card_expand_inner_layout.dark">
+        <item name="android:background">#4A4B4D</item>
+        <item name="android:textColor">#FFF</item>
+    </style>
+
+    <style name="Now.card_expand_inner_layout.dark.bold" parent="@style/Now.card_expand_inner_layout.dark">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+
+    <!--You may know card -->
+    <style name="carddemo_mayknow_main_inner_title">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:layout_marginLeft">@dimen/card_header_simple_title_margin_left</item>
+    </style>
+
+    <style name="carddemo_mayknow_main_inner_title.sub">
+        <item name="android:textSize">1sp</item>
+        <item name="android:textColor">@android:color/darker_gray</item>
+    </style>
+
+    <!-- Suggested community -->
+
+    <style name="carddemo_suggested_header_text"></style>
+
+    <style name="carddemo_suggested_text">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">#D0D0D0</item>
+    </style>
+
+    <style name="carddemo_suggested_text_bold">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="carddemo_suggested_text_bold1">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+
+    <!-- Expand inside -->
+    <style name="card.main_layout_expandinside" parent="card.main_layout">
+        <item name="android:background">@drawable/card_background</item>
+    </style>
+
+
+    <!--Dismiss Animation -->
+    <style name="card.dismiss_name">
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_gravity">left|center_vertical</item>
+        <item name="android:layout_marginTop">@dimen/card_main_simple_title_margin_top</item>
+    </style>
+
+    <!--Staggered-->
+    <!--Style for Content View-->
+    <style name="card.content_outer_layout.staggered">
+        <item name="android:minHeight">20dp</item>
+    </style>
+
+
+    <!--Style for Crouton View-->
+    <style name="card.content_outer_crouton_layout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:minHeight">32dp</item>
+        <item name="android:layout_marginTop">@dimen/card_content_outer_view_margin_top</item>
+        <item name="android:layout_marginBottom">@dimen/card_content_outer_view_margin_bottom</item>
+        <item name="android:layout_marginLeft">@dimen/card_content_outer_view_margin_left</item>
+        <item name="android:layout_marginRight">@dimen/card_content_outer_view_margin_right</item>
+    </style>
+
+    <style name="card_thumbnail_crouton_image">
+        <item name="android:layout_width">24dp</item>
+        <item name="android:layout_height">24dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
+    <style name="carddemo_extra_base_main_inner_title">
+        <item name="android:layout_width">24dp</item>
+        <item name="android:layout_height">24dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
+    <style name="carddemo_extra_base_main_inner_secondarytitle">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@android:color/darker_gray</item>
+    </style>
+
+    <style name="com_facebook_loginview_default_style" parent="@android:style/Widget.Button">
+        <item name="android:textSize">@dimen/com_facebook_loginview_text_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/com_facebook_loginview_text_color</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">@dimen/com_facebook_loginview_padding_left</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="com_facebook_loginview_silver_style" parent="@android:style/Widget.Button">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ff4b5164</item>
+        <item name="android:gravity">center</item>
+        <item name="android:height">44.0dip</item>
+        <item name="android:width">205.0dip</item>
+    </style>
+    <style name="MobogenieTheme" parent="@android:style/Theme">
+        <item name="android:colorBackground">@color/white</item>
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowTitleSize">40.0dip</item>
+        <item name="android:windowTitleBackgroundStyle">@style/TwAPImeThemeWindowTitleBar</item>
+    </style>
+    <style name="TwAPImeThemeWindowTitleBar">
+        <item name="android:background">@color/blue</item>
+    </style>
+    <style name="AppTheme" parent="@android:style/Theme.Light">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="ListViewStyle">
+        <item name="android:fadingEdge">none</item>
+        <item name="android:listSelector">@null</item>
+        <item name="android:scrollingCache">false</item>
+        <item name="android:cacheColorHint">@null</item>
+        <item name="android:divider">@null</item>
+        <item name="android:dividerHeight">10.0dip</item>
+    </style>
+    <style name="ExpandableListViewStyle">
+        <item name="android:fadingEdge">none</item>
+        <item name="android:listSelector">@null</item>
+        <item name="android:scrollingCache">false</item>
+        <item name="android:cacheColorHint">@null</item>
+        <item name="android:divider">@color/category_item_split_color</item>
+        <item name="android:dividerHeight">-2.0dip</item>
+    </style>
+    <style name="Dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+    <style name="Dialog_user" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+    <style name="DialogText">
+        <item name="android:textSize">12.0dip</item>
+        <item name="android:textColor">#ff333333</item>
+    </style>
+    <style name="DialogText.Title" parent="@style/DialogText">
+        <item name="android:textSize">16.0dip</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="MyStarRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:maxHeight">12.0dip</item>
+        <item name="android:progressDrawable">@drawable/rating_bar</item>
+        <item name="android:minHeight">12.0dip</item>
+    </style>
+    <style name="ThemeAppStartLoadTranslucent">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+    <style name="DownloadProgressBarStyleHorizontal">
+        <item name="android:focusable">false</item>
+        <item name="android:maxHeight">34.0dip</item>
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@drawable/download_progressbar</item>
+        <item name="android:minHeight">34.0dip</item>
+    </style>
+    <style name="WallpaperDetailDownloadProgressBarStyleHorizontal">
+        <item name="android:focusable">false</item>
+        <item name="android:maxHeight">34.0dip</item>
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@drawable/wallpaper_detail_download_progressbar</item>
+        <item name="android:minHeight">34.0dip</item>
+    </style>
+    <style name="MainPopAnimation" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/ppw_anim_in</item>
+        <item name="android:windowExitAnimation">@anim/ppw_anim_out</item>
+    </style>
+    <style name="popDialogWindowStyle" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+    <style name="MyCheckBox">
+        <item name="android:gravity">center</item>
+        <item name="android:background">@color/transparent</item>
+        <item name="android:button">@drawable/file_select_checkbox</item>
+    </style>
+    <style name="TransparentCheckBox">
+        <item name="android:button">@drawable/file_select_checkbox_noback</item>
+        <item name="android:height">24.0dip</item>
+        <item name="android:width">24.0dip</item>
+    </style>
+    <style name="PopupAnimation" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/push_up_in</item>
+        <item name="android:windowExitAnimation">@anim/push_up_out</item>
+    </style>
+    <style name="layout_full">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+    <style name="layout_wrap">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="layout_horizontal" parent="@style/layout_full">
+        <item name="android:layout_width">0.0dip</item>
+    </style>
+    <style name="layout_vertical" parent="@style/layout_full">
+        <item name="android:layout_height">0.0dip</item>
+    </style>
+</resources>

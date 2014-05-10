@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="drawable" name="com_facebook_picker_default_separator_color">#33464c59</item>
+    <item type="drawable" name="installing">#ff999999</item>
+    <item type="drawable" name="title_split">#ff077f98</item>
+    <item type="drawable" name="app_item_selected">#88dce9a0</item>
+    <item type="drawable" name="app_item_focus">#fff3f3f3</item>
+    <item type="drawable" name="white_drawable">#ffffffff</item>
+    <item type="drawable" name="dialog_selected_drawable">#ff2aaac1</item>
+    <item type="drawable" name="dialog_divde_drawable">#ffdddddd</item>
+    <item type="drawable" name="dialog_text_drawable">#ff333333</item>
+    <item type="drawable" name="ringtone_divde_drawable">#ffc4c4c4</item>
+    <item type="drawable" name="appinstalled_divde_drawable">#ffd0d0d0</item>
+    <item type="drawable" name="translant_black_drawable">#99000000</item>
+    <item type="drawable" name="search_key_divde_drawable">#ffd7d7d7</item>
+    <item type="drawable" name="translant_white_drawable">#00ffffff</item>
+    <item type="drawable" name="listview_bg_drawable">#ffeeeeee</item>
+    <item type="drawable" name="item_bg_drawable">#ffd0e8f0</item>
+    <item type="drawable" name="item_bg_drawable2">#20000000</item>
+    <item type="drawable" name="translant_drawable">#00000000</item>
+    <item type="drawable" name="sliding_progress_background">#ff414949</item>
+    <item type="drawable" name="black">#ff000000</item>
+    <item type="drawable" name="title_search_drawable">#ffd6d6d6</item>
+    <item type="drawable" name="recommend_bg_drawable">#fff7f7f7</item>
+    <item type="drawable" name="wallpaper_grid_item_bg_drawable">#88d0e8f0</item>
+</resources>
